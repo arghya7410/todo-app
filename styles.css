@@ -1,0 +1,155 @@
+/* Styling the body to center everything */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the to-do app */
+.container {
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2d3436;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button.add-task {
+  background-color: #55efc4;
+  color: white;
+}
+
+button.add-task:hover {
+  background-color: #00b894;
+}
+
+button.clear-completed {
+  background-color: #ff7675;
+  color: white;
+  margin-top: 15px;
+  width: 100%;
+}
+
+button.clear-completed:hover {
+  background-color: #d63031;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f2f6;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+li.completed {
+  background-color: #dfe6e9;
+  text-decoration: line-through;
+  color: #636e72;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.edit-mode input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b2bec3;
+  border-radius: 4px;
+}
+
+.actions button {
+  margin-left: 5px;
+  background-color: #74b9ff;
+  color: white;
+}
+
+.actions button:hover {
+  background-color: #0984e3;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Task Controls */
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#task-counter {
+  color: #2d3436;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  background-color: #dfe6e9;
+  color: #2d3436;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #b2bec3;
+}
+
+.filter-btn.active {
+  background-color: #0984e3;
+  color: white;
+}
